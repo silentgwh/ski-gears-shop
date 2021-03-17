@@ -1,0 +1,78 @@
+-------------------------------------------------------------------------
+=> clear the screen
+clear
+-------------------------------------------------------------------------
+=> Help command
+dotnet -h
+-------------------------------------------------------------------------
+=> What it is possible to create
+dotnet new -l
+-------------------------------------------------------------------------
+=> Create a new solution file
+dotnet new sln
+-------------------------------------------------------------------------
+=> Create a new API
+dotnet new webapi -o API // API  here is the name of the folder 
+                            where we want to keep our API
+-------------------------------------------------------------------------
+=> Add a project to our solution file
+dotnet sln add API
+-------------------------------------------------------------------------
+=> Show the files added to our solution file [ski-gears-shop.sln]
+dotnet sln list
+-------------------------------------------------------------------------
+=> Moving to API folder and run command
+cd API
+dotnet run
+-------------------------------------------------------------------------
+=> Stop dotnet from running
+ctr + c
+-------------------------------------------------------------------------
+=> Check https setificate
+dotnet dev-certs https
+-------------------------------------------------------------------------
+=> Help options for https setificate
+dotnet dev-certs https -h
+-------------------------------------------------------------------------
+=> Check if https is trusted
+dotnet dev-certs https -t
+-------------------------------------------------------------------------
+=> Automatic restart the server
+dotnet watch run
+-------------------------------------------------------------------------
+=> Give a list of all frameworks and sdk installed on the computer
+dotnet --info
+-------------------------------------------------------------------------
+=> Entity Framework Core Tools for the .NET Command-Line Interface
+dotnet tool list -g  // get info about the installed version
+dotnet tool install --global dotnet-ef --version 5.0.4 // istall 
+dotnet tool update --global dotnet-ef --version 5.0.4 // update
+-------------------------------------------------------------------------
+=> give a list of commands availible
+dotnet ef -h
+-------------------------------------------------------------------------
+=> Migration creations
+dotnet ef migrations add InitialCreate -o Data/Migrations
+-------------------------------------------------------------------------
+=> datebase commands availible
+dotnet ef database -h
+-------------------------------------------------------------------------
+=> update datebase
+dotnet ef database update
+-------------------------------------------------------------------------
+=> open sqlite explorer
+open datebase
+-------------------------------------------------------------------------
+=> to list availible tepmlates
+dotnet new -l
+-------------------------------------------------------------------------
+=> some actions
+dotnet new classlib -o Core
+dotnet new classlib -o Infastructure
+=> Adding these items to the solution
+dotnet sln add Core
+dotnet sln add Infastructure
+-------------------------------------------------------------------------
+=> Add reference
+dotnet add reference ../Infastructure
+
