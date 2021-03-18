@@ -6,7 +6,9 @@ git add .
 git commit -m "Creating the Web API project"
 git remote add origin https://github.com/silentgwh/ski-gears-shop.git
 git push origin master / git push -u origin main
-
+-------------------------------------------------------------------------
+=> Utilities for deelopment
+Datebase for development | Microsoft.EntityFrameworkCore.Sqlite
 -------------------------------------------------------------------------
 => clear the screen
 clear
