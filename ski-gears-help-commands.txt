@@ -62,8 +62,9 @@ dotnet tool update --global dotnet-ef --version 5.0.4 // update
 => give a list of commands availible
 dotnet ef -h
 -------------------------------------------------------------------------
-=> Migration creations
-dotnet ef migrations add InitialCreate -o Data/Migrations
+=> Migration creations 
+// necessary first to install [ Microsoft.EntityFrameworkCore.Design ]
+dotnet ef migrations add InitialCreate -o Data/Migrations // in API folder
 -------------------------------------------------------------------------
 => datebase commands availible
 dotnet ef database -h
