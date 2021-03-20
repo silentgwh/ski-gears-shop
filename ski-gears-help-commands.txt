@@ -78,13 +78,26 @@ open datebase
 => to list availible tepmlates
 dotnet new -l
 -------------------------------------------------------------------------
-=> some actions
+=> some actions // ski-gears-shop folder
 dotnet new classlib -o Core
-dotnet new classlib -o Infastructure
+dotnet new classlib -o Infrastructure
 => Adding these items to the solution
 dotnet sln add Core
-dotnet sln add Infastructure
+dotnet sln add Infrastructure
 -------------------------------------------------------------------------
 => Add reference
-dotnet add reference ../Infastructure
+// API folder
+dotnet add reference ../Infrastructure
 
+// Infrastructure folder
+dotnet add reference ../Core
+
+// ski-gears-shop folder
+dotnet restore
+-------------------------------------------------------------------------
+=> Restores the dependencies and tools of a project
+dotnet restore
+-------------------------------------------------------------------------
+=> Builds a project and all of its dependencies
+dotnet build
+-------------------------------------------------------------------------
