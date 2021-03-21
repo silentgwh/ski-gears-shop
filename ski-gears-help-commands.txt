@@ -1,4 +1,6 @@
--------------------------------------------------------------------------
+=========================================================================
+                         #Working with github#
+=========================================================================
 => github usesul commands
 git status
 git init
@@ -6,7 +8,9 @@ git add .
 git commit -m "Creating the Web API project"
 git remote add origin https://github.com/silentgwh/ski-gears-shop.git
 git push origin master / git push -u origin main
--------------------------------------------------------------------------
+=========================================================================
+                         #Helpful basic commands#
+=========================================================================
 => Utilities for development
 Datebase for development | Microsoft.EntityFrameworkCore.Sqlite
 -------------------------------------------------------------------------
@@ -53,6 +57,9 @@ dotnet watch run
 -------------------------------------------------------------------------
 => Give a list of all frameworks and sdk installed on the computer
 dotnet --info
+=========================================================================
+                  #Working with Entity Framework Core#
+=========================================================================
 -------------------------------------------------------------------------
 => Entity Framework Core Tools for the .NET Command-Line Interface
 dotnet tool list -g  // get info about the installed version
@@ -74,7 +81,9 @@ dotnet ef database update
 -------------------------------------------------------------------------
 => open sqlite explorer
 open datebase
--------------------------------------------------------------------------
+=========================================================================
+             #Creating Core and Infrastructure projects#
+=========================================================================
 => to list availible tepmlates
 dotnet new -l
 -------------------------------------------------------------------------
