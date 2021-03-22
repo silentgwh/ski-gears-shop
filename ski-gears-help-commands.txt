@@ -110,3 +110,19 @@ dotnet restore
 => Builds a project and all of its dependencies
 dotnet build
 -------------------------------------------------------------------------
+=========================================================================
+                  # Creating a new migration for the entities #
+=========================================================================
+=> We specify where the Storecontext is availible, 
+   // it is Infrastructure folder 
+   // and also specify startup class in API folder
+   // dotnet ef database drop -p Infrastructure -s API
+dotnet ef database drop -p Infrastructure -s API
+-------------------------------------------------------------------------             
+=> remove migration // empty the folder where migrations reside
+dotnet ef migrations remove -p Infrastructure -s API
+
+------------------------------------------------------------------------- 
+=> generate a new migration // -o it is an output folder
+dotnet ef migrations add InitialCreate -p Infrastructure -s API -o Data/Migrations
+------------------------------------------------------------------------- 
