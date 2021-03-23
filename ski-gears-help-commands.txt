@@ -119,10 +119,16 @@ dotnet build
    // dotnet ef database drop -p Infrastructure -s API
 dotnet ef database drop -p Infrastructure -s API
 -------------------------------------------------------------------------             
-=> remove migration // empty the folder where migrations reside
+=> remove migration // to empty the folder where migrations reside
 dotnet ef migrations remove -p Infrastructure -s API
-
 ------------------------------------------------------------------------- 
 => generate a new migration // -o it is an output folder
+dotnet ef migrations add InitialCreate -p Infrastructure -s API -o Data/Migrations
+=========================================================================
+                      # Configuring the migrations #
+=========================================================================
+=> remove previous migration
+dotnet ef migrations remove -p Infrastructure -s API
+=> repeat the command to create a new migration
 dotnet ef migrations add InitialCreate -p Infrastructure -s API -o Data/Migrations
 ------------------------------------------------------------------------- 
