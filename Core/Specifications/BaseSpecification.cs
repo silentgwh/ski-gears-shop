@@ -24,10 +24,6 @@ namespace Core.Specifications
 
         public Expression<Func<T, object>> OrderByDescending { get; private set; }
 
-        Expression<Func<T, bool>> ISpecification<T>.Criteria => throw new NotImplementedException();
-
-        List<Expression<Func<T, object>>> ISpecification<T>.Includes => throw new NotImplementedException();
-
         protected void AddInclude(Expression<Func<T, object>> includeExpression)
         {
             Includes.Add(includeExpression);
