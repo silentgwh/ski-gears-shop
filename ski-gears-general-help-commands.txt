@@ -132,3 +132,4 @@ dotnet ef migrations remove -p Infrastructure -s API
 => repeat the command to create a new migration
 dotnet ef migrations add InitialCreate -p Infrastructure -s API -o Data/Migrations
 ------------------------------------------------------------------------- 
+=========================================================================
