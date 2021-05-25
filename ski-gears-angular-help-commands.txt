@@ -16,4 +16,14 @@ cd client
 -------------------------------------------------------------------------
 => run a client
 ng serve
+-------------------------------------------------------------------------
+=> add ngx-bootstrap
+Variant 1: npm install ngx-bootstrap --save
+Variant 2: ng add ngx-bootstrap // some installing issues
+-------------------------------------------------------------------------
+=> install specific version of bootstrap
+npm install bootstrap@4.6.0
+-------------------------------------------------------------------------
+=> install font-awesome
+npm install font-awesome
 =========================================================================
