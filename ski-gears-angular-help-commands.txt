@@ -26,4 +26,15 @@ npm install bootstrap@4.6.0
 -------------------------------------------------------------------------
 => install font-awesome
 npm install font-awesome
+-------------------------------------------------------------------------
+=> view availible elements to construct
+ng g
+-------------------------------------------------------------------------
+=> view help option for creating a component
+ng g c -h
+or 
+ng g c --help
+-------------------------------------------------------------------------
+=> creating a nav-bar component
+ng g c nav-bar --skip-tests
 =========================================================================
