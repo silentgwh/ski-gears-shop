@@ -37,4 +37,18 @@ ng g c --help
 -------------------------------------------------------------------------
 => creating a nav-bar component
 ng g c nav-bar --skip-tests
+-------------------------------------------------------------------------
+=> moving and creating a core module in the app folder
+cd src/app
+ng g m core
+-------------------------------------------------------------------------
+=> creating a shop module
+ng g m shop
+-------------------------------------------------------------------------
+=> --flat puts the file in src/app instead of its own folder. ??
+=> --flat doesn't create its own folder
+ng g c shop --flat --skip-tests
+-------------------------------------------------------------------------
+=> creating a service
+ng g s shop --skip-tests --tests
 =========================================================================
