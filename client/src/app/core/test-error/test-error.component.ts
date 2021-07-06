@@ -26,7 +26,7 @@ export class TestErrorComponent implements OnInit {
   }
 
   get500Error() {
-    this.http.get(this.baseUrl + 'buggy/server').subscribe(
+    this.http.get(this.baseUrl + 'buggy/servererror').subscribe(
       (response) => {
         console.log(response);
       },
